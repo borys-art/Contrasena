@@ -1,6 +1,6 @@
 //https://www.eclipse.org/paho/clients/js/
 
-/*function LED1_On() {
+function LED1_On() {
 	//alert("led on");
 	console.log("led1 on");
 	//document.getElementById("sensor").innerHTML="led on";
@@ -60,7 +60,7 @@ function contrasena(){
 	alert("Constraseña Incorrecta");
 	pw.focus();
 	}
-}*/
+}
 
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
