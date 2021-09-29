@@ -111,13 +111,29 @@ function contrasena(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	 y= message.payloadString;
-	 t=y.split(':');
-	 z0=t[0];
-	 z1=t[1];
-	 z2=t[2]; 
-	 document.getElementById("hora").innerHTML=z0;
-	 document.getElementById("minutos").innerHTML=z1;
-	 document.getElementById("segundos").innerHTML=z2;
+	  y=message.payloadString;
+	  if(y=="hola, el LED se encuentra encendido"){
+	  document.getElementById("sensor").innerHTML=y;
+	  document.getElementById("historial").innerHTML="";
+	  }
+	  else if(y=="hola, el LED se encuentra apagado"){
+	  document.getElementById("sensor").innerHTML=y;
+	  document.getElementById("historial").innerHTML="";	  
+	  }
+	  else if(y=="ESTADO ACTUAL ENCENDIDO"){
+	  document.getElementById("estadoactual").innerHTML=y;
+	  document.getElementById("sensor").innerHTML="";
+	  document.getElementById("historial").innerHTML="";
+          }
+          else if(y="ESTADO ACTUAL APAGADO"){
+	  document.getElementById("estadoactual").innerHTML=y;
+	  document.getElementById("sensor").innerHTML="";
+	  document.getElementById("historial").innerHTML="";
+	  }else {
+	  document.getElementById("historial").innerHTML=y;
+	  document.getElementById("sensor").innerHTML="";
+	  document.getElementById("estadoactual").innerHTML=""	  
+	  }
+	  
   }
   
