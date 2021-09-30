@@ -36,7 +36,7 @@ function LED2_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function contrasena(){	
+function Contrasena(){	
 	//alert("led off");
 	var pwd = document.getElementById('pw').value;
 	console.log('Contraseña');
