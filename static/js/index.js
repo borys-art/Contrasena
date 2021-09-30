@@ -127,10 +127,10 @@ function Contrasena(){
           else if(y="hola, el sensor 2 se encuentra apagado"){
 	  document.getElementById("sensor2").innerHTML=y;
 	  document.getElementById("historial").innerHTML="";
-	  }else {
+	  }else{
 	  document.getElementById("historial").innerHTML=y;
 	  document.getElementById("sensor1").innerHTML="";
-	  document.getElementById("sensor2").innerHTML=""	  
+	  document.getElementById("sensor2").innerHTML="";	  
 	  }
 	  
   }
